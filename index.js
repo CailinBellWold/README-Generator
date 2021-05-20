@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require('util');
+const mustache = require('mustache');
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -61,13 +62,13 @@ const questions = () => {
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 const generateMD = (answers) =>
-# Title 
+`Title 
 ${answers.title}
 
-## Description
+Description
 ${answers.description}
 
-## Table of Contents
+Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
@@ -75,24 +76,24 @@ ${answers.description}
 - [License](#License)
 - [Questions](#Questions)
 
-## Installation
+Installation
 ${answers.installation}
 
-## Usage
+Usage
 ${answers.usage}
 
-## Contributing
+Contributing
 ${answers.contributing}
 
-## Tests
+Tests
 ${answers.tests}
 
-## License
+License
 ${answers.license}
 
-## Questions
+Questions
 ${answers.github}
-${answers.email}
+${answers.email}`
 
 // TODO: Create a function to initialize app
 const init = () => {
