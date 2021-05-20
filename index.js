@@ -98,7 +98,7 @@ ${answers.email}`
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then((answers) => writeFileAsync('README.md', generateMD(answers)))
+        .then((answers) => writeFileAsync('ProjectREADME.md', generateMD(answers)))
         .then(() => console.log('Successfully wrote to README.md'))
         .catch((err) => console.error(err));
 };
