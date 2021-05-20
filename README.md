@@ -21,13 +21,13 @@ This exercise furthered experience dynamically updating HTML and CSS using jQuer
 - [Questions](#Questions)
 
 ## Core Objectives Met
-1. (IN PROGRESS) Following the completion of prompts about an application's repository, the user is presented with a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
-2. (IN PROGRESS) When a user enters the project title, it is displayed as the title of the README.
-3. (IN PROGRESS) When a user enters a description, installation instructions, usage information, contribution guidelines, and test instructions, this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests.
+1. (IN PROGRESS) Following the completion of prompts about an application's repository, the user is presented with a high-quality, professional README.md, generated with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+2. When a user enters the project title, it is displayed as the title of the README.
+3. When a user enters a description, installation instructions, usage information, contribution guidelines, and test instructions, this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests.
 4. (IN PROGRESS) When a user chooses a license for the application from a list of options, a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under.
-5. (IN PROGRESS) When a user enters their GitHub username, it is added to the section of the README entitled Questions, with a link to the GitHub profile.
-6. (IN PROGRESS) When a user enters their email address, it is added to the section of the README entitled Questions, with instructions on how to reach them with additional questions. 
-7. (IN PROGRESS) When a user clicks on the links in the Table of Contents,  then they are taken to the corresponding section of the README.
+5. When a user enters their GitHub username, it is added to the section of the README entitled Questions, with a link to the GitHub profile.
+6. When a user enters their email address, it is added to the section of the README entitled Questions, with instructions on how to reach them with additional questions. 
+7. When a user clicks on the links in the Table of Contents,  then they are taken to the corresponding section of the README.
 
 ## Technologies Used
 - JavaScript

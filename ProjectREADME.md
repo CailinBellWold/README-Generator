@@ -1,10 +1,10 @@
-Title 
-Project 1
+# Title 
+Project 3
 
-Description
-Description 1.
+## Description
+Project 3 Description
 
-Table of Contents
+## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
@@ -12,21 +12,21 @@ Table of Contents
 - [License](#License)
 - [Questions](#Questions)
 
-Installation
-Install like this.
+## Installation
+Install like so.
 
-Usage
-Use like this.
+## Usage
+Use like so.
 
-Contributing
-Contribute like this.
+## Contributing
+Contribute like so.
 
-Tests
-Test like this.
+## Tests
+Test like so.
 
-License
+## License
 MIT
 
-Questions
-CailinBellWold
-cmbellwold@gmail.com
+## Questions
+GitHub: [CailinBellWold](https://github.com/CailinBellWold).
+For inquiries, please contact cmbellwold@gmail.com.

@@ -62,13 +62,13 @@ const questions = () => {
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 const generateMD = (answers) =>
-`Title 
+`# Title 
 ${answers.title}
 
-Description
+## Description
 ${answers.description}
 
-Table of Contents
+## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
@@ -76,24 +76,24 @@ Table of Contents
 - [License](#License)
 - [Questions](#Questions)
 
-Installation
+## Installation
 ${answers.installation}
 
-Usage
+## Usage
 ${answers.usage}
 
-Contributing
+## Contributing
 ${answers.contributing}
 
-Tests
+## Tests
 ${answers.tests}
 
-License
+## License
 ${answers.license}
 
-Questions
-${answers.github}
-${answers.email}`
+## Questions
+GitHub: [${answers.github}](https://github.com/${answers.github}).
+For inquiries, please contact ${answers.email}.`
 
 // TODO: Create a function to initialize app
 const init = () => {
