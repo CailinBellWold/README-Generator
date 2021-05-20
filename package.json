@@ -1,0 +1,25 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/github/license/CailinBellWold/README-Generator?style=plastic)](https://opensource.org/licenses/MIT)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cailin Bell Wold",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CailinBellWold/README-Generator.git"
+  },
+  "keywords": [
+    "inquirer"
+  ],
+  "bugs": {
+    "url": "https://github.com/CailinBellWold/README-Generator/issues"
+  },
+  "homepage": "https://github.com/CailinBellWold/README-Generator#readme"
+}
