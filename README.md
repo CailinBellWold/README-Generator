@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/github/license/CailinBellWold/README-Generator?style=plastic)](https://opensource.org/licenses/MIT)
 
 ## Description 
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+Create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
 ### Motivation
 Streamlining each step of the programming process enables the developer to spend more time problem-solving and less time duplicating efforts. Many, if not most, applications contain some aspect that deals with time. Diving in to Moment.js as one data/time handling option was useful for discovering how time data can be passed, formatted, and utlized to update the DOM.
