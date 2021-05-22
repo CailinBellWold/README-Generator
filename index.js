@@ -1,9 +1,10 @@
-//CBW To-Dos: 1.) Can I wrap text in the console? Validate Responses (not blank, trim), 2.) Set up Licenses, Badges and Links in an array to avoid redundancy
+//CBW To-Dos: 1.) Validate Responses (not blank, trim), 2.) Set up Licenses, Badges and Links in an array to avoid redundancy. 3.) Would if/then on generateMarkdown be a good candidate for switch statements?
 
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require('util');
+const generateMD = require('./scripts/generateMarkdown.js');
 
 // create writeFile function using promises instead of a callback function
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -66,39 +67,45 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-const generateMD = (answers) =>
-`# ${answers.title}
+// const generateMD = (answers) =>
+// `# ${answers.title}
 
-## Description
-${answers.description}
+// ## Description
+// ${answers.description}
 
-## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [License](#License)
-- [Questions](#Questions)
+// ## Table of Contents
+// - [Installation](#Installation)
+// - [Usage](#Usage)
+// - [Contributing](#Contributing)
+// - [Tests](#Tests)
+// - [License](#License)
+// - [Questions](#Questions)
 
-## Installation
-${answers.installation}
+// ## Installation
+// ${answers.installation}
 
-## Usage
-${answers.usage}
+// ## Usage
+// ${answers.usage}
 
-## Contributing
-${answers.contributing}
+// ## Contributing
+// ${answers.contributing}
 
-## Tests
-${answers.tests}
+// ## Tests
+// ${answers.tests}
 
-## License
-${answers.license}
+// ## License
+// This project is governed by the following license: ${answers.license}.
 
-## Questions
-GitHub: [${answers.github}](https://github.com/${answers.github}).
-For inquiries, please contact ${answers.email}.`
+// ## Questions
+// GitHub: [${answers.github}](https://github.com/${answers.github}).
+// For inquiries, please contact ${answers.email}.`
+
+
+
+
+// function writeToFile(fileName, data) {
+
+// }
 
 // TODO: Create a function to initialize app
 const init = () => {
@@ -107,12 +114,7 @@ const init = () => {
         .then(() => console.log('Successfully wrote READMD.md to your output folder'))
         .catch((err) => console.error(err));
 };
-
 // Function call to initialize app
 init();
-
-
-
-
 
 
