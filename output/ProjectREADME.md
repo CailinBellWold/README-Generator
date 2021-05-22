@@ -1,6 +1,6 @@
 # Project 11
 
-  [![Apache License 2.0](https://img.shields.io/github/license/CailinBellWold/Project 11?style=plastic)](https://opensource.org/licenses/Apache-2.0);
+[![Apache License 2.0](https://img.shields.io/github/license/CailinBellWold/Project 11?style=plastic)](https://opensource.org/licenses/Apache-2.0);
 
   ## Description
   Project Description Here

@@ -1,4 +1,4 @@
-//CBW To-Dos: 1.) Validate Responses (not blank, trim), 2.) Set up Licenses, Badges and Links in an array to avoid redundancy. 3.) Would if/then on generateMarkdown be a good candidate for switch statements?
+//CBW To-Dos: 1.) Validate Responses (not blank, trim) 2.) Figure out which badge arrangement makes the most sense. 3.) 
 
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
@@ -51,7 +51,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which license applies to your project?',
-            choices: ['Apache License 2.0', 'BSD-3-Clause', 'BSD-2-Clause', 'CDDL-1.0', 'EPL-2.0', 'GPL', 'LGPL', 'MIT', 'MPL-2.0', 'N/A'],
+            choices: ['Apache License 2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'CDDL-1.0', 'EPL-2.0', 'GPL', 'LGPL', 'MIT', 'MPL-2.0', 'N/A'],
         },
         {
             type: 'input',
@@ -66,47 +66,6 @@ const questions = () => {
     ]);
 };
 
-// TODO: Create a function to write README file
-// const generateMD = (answers) =>
-// `# ${answers.title}
-
-// ## Description
-// ${answers.description}
-
-// ## Table of Contents
-// - [Installation](#Installation)
-// - [Usage](#Usage)
-// - [Contributing](#Contributing)
-// - [Tests](#Tests)
-// - [License](#License)
-// - [Questions](#Questions)
-
-// ## Installation
-// ${answers.installation}
-
-// ## Usage
-// ${answers.usage}
-
-// ## Contributing
-// ${answers.contributing}
-
-// ## Tests
-// ${answers.tests}
-
-// ## License
-// This project is governed by the following license: ${answers.license}.
-
-// ## Questions
-// GitHub: [${answers.github}](https://github.com/${answers.github}).
-// For inquiries, please contact ${answers.email}.`
-
-
-
-
-// function writeToFile(fileName, data) {
-
-// }
-
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
@@ -114,7 +73,6 @@ const init = () => {
         .then(() => console.log('Successfully wrote READMD.md to your output folder'))
         .catch((err) => console.error(err));
 };
+
 // Function call to initialize app
 init();
-
-
