@@ -1,8 +1,7 @@
-# Title 
-Project 3
+# Project1
 
 ## Description
-Project 3 Description
+Described here.
 
 ## Table of Contents
 - [Installation](#Installation)
