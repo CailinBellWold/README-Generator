@@ -1,9 +1,9 @@
-# Project 11
+# README-Generator
 
-[![Apache License 2.0](https://img.shields.io/github/license/CailinBellWold/Project 11?style=plastic)](https://opensource.org/licenses/Apache-2.0);
+  [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Project Description Here
+  Project described here.
   
   ## Table of Contents
   - [Installation](#Installation)
@@ -14,19 +14,19 @@
   - [Questions](#Questions)
   
   ## Installation
-  Install like so.,
+  Project installed here.
   
   ## Usage
-  Use like so.
+  Project used like so.
   
   ## Contributing
-  Contribute like so.
+  Project contributed to like so.
   
   ## Tests
-  Test like so.
+  Project instructions like so.
   
   ## License
-  This project is governed by the following license: Apache License 2.0.
+  This project is licensed under the terms of the MIT.
   
   ## Questions
   GitHub: [CailinBellWold](https://github.com/CailinBellWold).

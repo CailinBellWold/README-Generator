@@ -1,4 +1,4 @@
-//CBW To-Dos: 1.) Validate Responses (not blank, trim) 2.) Figure out which badge arrangement makes the most sense. 3.) 
+//CBW To-Dos: 1.) Validate Responses (not blank, trim) 2.) Figure out which badge arrangement makes the most sense.
 
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
@@ -15,7 +15,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'welcome',
-            message: 'Welcome to my automated README.md Generator. \n I\'m going to ask you some questions that will help me complete your customized README.md. \n Let\'s get started!',
+            message: 'Welcome to my automated README.md Generator. \n I\'m going to ask you some questions that will help me complete your customized README.md. \n Let\'s get started! Press ENTER to continue.',
         },
         {
             type: 'input',
@@ -51,7 +51,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which license applies to your project?',
-            choices: ['Apache License 2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'CDDL-1.0', 'EPL-2.0', 'GPL', 'LGPL', 'MIT', 'MPL-2.0', 'N/A'],
+            choices: ['Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'CDDL-1.0', 'EPL-2.0', 'GPL-2.0', 'LGPL-3.0', 'MIT', 'MPL-2.0', 'N/A'],
         },
         {
             type: 'input',

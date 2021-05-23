@@ -1,59 +1,54 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
-// `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
-// ![GitHub](https://img.shields.io/github/license/CailinBellWold/README-Generator)
-
-function renderLicenseBadge(license, answers) {
+//Returns a License Badge with embedded Link
+function renderLicenseBadge(license) {
   const licenses = [
     {
-      license: 'Apache License 2.0',
-      badge: `(https://img.shields.io/badge/license-${answers.license}/${answers.title}?style=plastic)`,
+      license: 'Apache-2.0',
+      badge: `(https://img.shields.io/badge/License-Apache%202.0-blue.svg)`,
       link: `(https://opensource.org/licenses/Apache-2.0)`
     },
     {
       license: 'BSD-2-Clause',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`,
       link: `(https://opensource.org/licenses/BSD-2-Clause)`
     },
     {
       license: 'BSD-3-Clause',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-BSD%202--Clause-blue.svg)`,
       link: `(https://opensource.org/licenses/BSD-3-Clause)`
     },
     {
       license: 'CDDL-1.0',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-CDDL%201.0-blue.svg)`,
       link: `(https://opensource.org/licenses/CDDL-1.0)`
     },
     {
       license: 'EPL-2.0',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-EPL%202.0-blue.svg)`,
       link: `(https://opensource.org/licenses/EPL-2.0)`
     },
     {
-      license: 'GPL',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
-      link: `(https://opensource.org/licenses/gpl-license)`
+      license: 'GPL-2.0',
+      badge: `(https://img.shields.io/badge/License-GPL%202.0-blue.svg)`,
+      link: `(https://opensource.org/licenses/GPL-2.0)`
     },
     {
-      license: 'LGPL',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
-      link: `(https://opensource.org/licenses/lgpl-license)`
+      license: 'LGPL-3.0',
+      badge: `(https://img.shields.io/badge/License-LGPL%203.0-blue.svg)`,
+      link: `(https://opensource.org/licenses/LGPL-3.0)`
     },
     {
       license: 'MIT',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-MIT-blue.svg)`,
       link: `(https://opensource.org/licenses/MIT)`
     },
     {
       license: 'MPL-2.0',
-      badge: `(https://img.shields.io/github/license/${answers.github}/${answers.title}?style=plastic)`,
+      badge: `(https://img.shields.io/badge/License-MPL%202.0-blue.svg)`,
       link: `(https://opensource.org/licenses/MPL-2.0)`
-    },
+    }
   ]
   switch (license) {
-    case 'Apache License 2.0':
+    case 'Apache-2.0':
       response = `[![${licenses[0].license}]${licenses[0].badge}]${licenses[0].link}`;
       break;
     case 'BSD-2-Clause':
@@ -68,10 +63,10 @@ function renderLicenseBadge(license, answers) {
     case 'EPL-2.0':
       response = `[![${licenses[4].license}]${licenses[4].badge}]${licenses[4].link}`;
       break;
-    case 'GPL':
+    case 'GPL-2.0':
       response = `[![${licenses[5].license}]${licenses[5].badge}]${licenses[5].link}`;
       break;
-    case 'LGPL':
+    case 'LGPL-3.0':
       response = `[![${licenses[6].license}]${licenses[6].badge}]${licenses[6].link}`;
       break;
     case 'MIT':
@@ -87,53 +82,11 @@ function renderLicenseBadge(license, answers) {
   return response;
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  let licenseLink;
-if (answers.license === 'Apache License 2.0') {
-  licenseLink = `[License: Apache-2.0](https://opensource.org/licenses/Apache-2.0)`
-  return licenseLink; 
-  } else if (answers.license === 'BSD-3-Clause') {
-    licenseLink = `[License: BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause)`
-    return licenseLink;;
-  } else if (answers.license === 'BSD-2-Clause') {
-    licenseLink = `[License: BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)`
-    return licenseLink;;
-  } else if (answers.license === 'CDDL-1.0') {
-    licenseLink = `[License: CDDL-1.0](https://opensource.org/licenses/CDDL-1.0)`
-    return licenseLink;;
-  } else if  (answers.license === 'EPL-2.0') {
-    licenseLink = `[License: EPL-2.0](https://opensource.org/licenses/EPL-2.0)`
-    return licenseLink;;
-  } else if  (answers.license === 'GPL') {
-    licenseLink = `[License: GPL](https://opensource.org/licenses/gpl-license)`
-    return licenseLink;;
-  } else if (answers.license === 'LGPL') {
-    licenseLink = `[License: LGPL](https://opensource.org/licenses/lgpl-license)`
-    return licenseLink;;
-    } else if (answers.license === 'MIT') {
-      licenseLink = `[License: MIT](https://opensource.org/licenses/MIT)`
-    return licenseLink;;
-  } else if (answers.license === 'MPL-2.0') {
-    licenseLink = `[License: MPL-2.0](https://opensource.org/licenses/MPL-2.0)`
-    return licenseLink;;
-  } else if (answers.license === 'N/A') {
-    licenseLink = "";
-    return licenseLink;
-  }
-};
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-// }
-
-// TODO: Create a function to generate markdown for README
+// Generates Markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
-  ${renderLicenseBadge(answers.license,answers)};
+  ${renderLicenseBadge(answers.license,answers)}
 
   ## Description
   ${answers.description}
@@ -159,10 +112,10 @@ function generateMarkdown(answers) {
   ${answers.tests}
   
   ## License
-  This project is governed by the following license: ${answers.license}.
+  This project is licensed under the terms of the following license: **${answers.license}**.
   
   ## Questions
-  GitHub: [${answers.github}](https://github.com/${answers.github}).
+  GitHub: [${answers.github}](https://github.com/${answers.github}). \n
   For inquiries, please contact ${answers.email}.`;
 }
 
