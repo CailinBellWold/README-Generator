@@ -59,7 +59,7 @@ DEMO
 
 SCREENSHOT *Screenshot of demo README.*
 
-![README.md output screenshot.](./images/.gif)
+![README.md output screenshot.](./images/README-Generator-Screenshot01.png)
 
 ## MIT License
 &copy;2021 Cailin Bell Wold
