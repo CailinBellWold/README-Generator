@@ -1,15 +1,13 @@
-//CBW To-Dos: 1.) Validate Responses (not blank, trim) 2.) Figure out which badge arrangement makes the most sense.
-
-// TODO: Include packages needed for this application
+// Packages and files required for this project
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require('util');
 const generateMD = require('./scripts/generateMarkdown.js');
 
-// create writeFile function using promises instead of a callback function
+// Creates file Asynchronously (we used this structure in class)
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+// Questions awaiting user input
 const questions = () => {
     return inquirer.prompt([
         {
@@ -66,10 +64,10 @@ const questions = () => {
     ]);
 };
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 const init = () => {
     questions()
-        .then((answers) => writeFileAsync('./output/ProjectREADME.md', generateMD(answers)))
+        .then((answers) => writeFileAsync('./output/README.md', generateMD(answers)))
         .then(() => console.log('Successfully wrote READMD.md to your output folder'))
         .catch((err) => console.error(err));
 };

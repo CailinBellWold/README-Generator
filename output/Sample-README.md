@@ -3,7 +3,7 @@
   [![MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Project described here.
+  Described like so.
   
   ## Table of Contents
   - [Installation](#Installation)
@@ -14,20 +14,21 @@
   - [Questions](#Questions)
   
   ## Installation
-  Project installed here.
+  Install like so.
   
   ## Usage
-  Project used like so.
+  Use like so.
   
   ## Contributing
-  Project contributed to like so.
+  Contribute like so.
   
   ## Tests
-  Project instructions like so.
+  Test like so.
   
   ## License
-  This project is licensed under the terms of the MIT.
+  This project is licensed under the terms of the following license: **MIT**.
   
   ## Questions
-  GitHub: [CailinBellWold](https://github.com/CailinBellWold).
+  GitHub: [CailinBellWold](https://github.com/CailinBellWold). 
+
   For inquiries, please contact cmbellwold@gmail.com.

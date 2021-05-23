@@ -1,4 +1,4 @@
-//Returns a License Badge with embedded Link
+//Returns a License Badge with Embedded Link
 function renderLicenseBadge(license) {
   const licenses = [
     {
