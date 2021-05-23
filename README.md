@@ -54,6 +54,7 @@ This exercise provided my first experience with Node.js, NPM packages, and gener
 
 DEMO 
 *Creating a README, following the in-terminal prompts. Verifying that the README file is created and meets project requirements.*
+This demo may also be accessed via this [Demo Link](https://github.com/CailinBellWold/README-Generator/blob/main/images/README-Generator.gif).
 
 ![Demo README.md creation.](./images/README-Generator.gif)
 
